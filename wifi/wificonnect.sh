@@ -6,7 +6,7 @@ read wifilocation
 
 if [[ -v wifisuffixes["${wifilocation^^}"] ]]; then
     sudo nmcli dev wifi connect "BPGC${wifisuffixes["${wifilocation^^}"]}"
-    firefox https://campnet.bits-goa.ac.in:8090/
+    chromium https://campnet.bits-goa.ac.in:8090/
 else
     echo "incorrect location"
 fi
