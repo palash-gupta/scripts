@@ -1,2 +1,2 @@
 sudo pkill flask
-notify-send "Flask server killed."
+dunstify -r 53535 "Flask server killed."
