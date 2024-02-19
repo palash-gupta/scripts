@@ -1,0 +1,1 @@
+bluetoothctl disconnect 00:00:AB:CE:94:C9 && $(echo alsa_output.pci-0000_00_1f.3.analog-stereo > /tmp/audio-sink && notify-send --icon=bluetooth "Disconnected from Airdopes") || notify-send --icon=bluetooth "Failed to Disconnect."

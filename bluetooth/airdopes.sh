@@ -1,0 +1,1 @@
+bluetoothctl connect 00:00:AB:CE:94:C9 && $(echo bluez_sink.00_00_AB_CE_94_C9.a2dp_sink > /tmp/audio-sink && notify-send --icon=bluetooth "Connected to Airdopes!") || notify-send --icon=bluetooth "Connection failed."

@@ -9,12 +9,14 @@
 # https://github.com/dastorm/volume-notification-dunst/blob/master/volume.sh
 # https://gist.github.com/sebastiencs/5d7227f388d93374cebdf72e783fbd6a
 
+sink=$(cat /tmp/audio-sink)
+
 function get_volume {
-    pactl get-sink-volume 0 | grep Volume | awk '{print $5}' | cut -d '%' -f 1
+    pactl get-sink-volume $sink | grep Volume | awk '{print $5}' | cut -d '%' -f 1
 }
 
 function is_mute {
-    pactl get-sink-mute 0 | awk '{print $2}'
+    pactl get-sink-mute $sink | awk '{print $2}'
 }
 
 function send_notification {
@@ -44,18 +46,18 @@ function send_notification {
 case $1 in
   up)
     # set the volume on (if it was muted)
-    pactl set-sink-mute 0 off
+    pactl set-sink-mute $sink off
     # up the volume (+ 5%)
-    pactl set-sink-volume 0 +5%
+    pactl set-sink-volume $sink +5%
     send_notification
     ;;
   down)
-    pactl set-sink-volume 0 -5%
+    pactl set-sink-volume $sink -5%
     send_notification
     ;;
   mute)
     # toggle mute
-    pactl set-sink-mute 0 toggle
+    pactl set-sink-mute $sink toggle
     send_notification
     ;;
 esac

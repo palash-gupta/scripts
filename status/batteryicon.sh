@@ -40,14 +40,14 @@ if [[ "$status_" == "Discharging" ]]; then
     elif [[ $capacity_ -gt 10 ]]; then
         if [[ "${battery_}" == "no" ]]; then
             dunstify -i /usr/share/icons/Papirus/48x48/status/battery-caution.svg "Battery Low"
-            paplay /home/reiter/scripts/status/low_battery.mp3
+            paplay /home/reiter/scripts/status/sfx/low_battery.mp3
             echo low > /tmp/battery-notification
         fi
         echo "󰁺 $capacity_%"
     elif [[ $capacity_ -lt 11 ]]; then
         if [[ "${battery_}" == "low" ]]; then
             dunstify -i /usr/share/icons/Papirus/48x48/status/battery-caution.svg -u critical "Battery Critical"
-            paplay /home/reiter/scripts/status/critical_battery.mp3
+            paplay /home/reiter/scripts/status/sfx/critical_battery.mp3
             echo critical > /tmp/battery-notification
         fi
         echo "󰂎 $capacity_%"
@@ -60,7 +60,7 @@ elif [[ "$status_" == "Charging" ]]; then
     if [[ $capacity_ -gt 95 ]]; then
         if [[ "${charging_}" == "charging" ]]; then
             dunstify -i /usr/share/icons/Papirus/48x48/status/battery-full-charged.svg "Battery Charged"
-            paplay /home/reiter/scripts/status/charged_battery.mp3
+            paplay /home/reiter/scripts/status/sfx/charged_battery.mp3
             echo charged > /tmp/battery-charging-notification
         fi
         echo "󰂅 $capacity_%"
