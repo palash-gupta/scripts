@@ -1,26 +1,26 @@
-grinning face                                   😀
-grinning face with big eyes                     😃
-grinning face with smiling eyes                 😄
-beaming face with smiling eyes                  😁
-grinning squinting face                         😆
+grinning face smily smiling                     😀
+grinning face with big eyes smily smiling       😃
+grinning face with smiling eyes smily           😄
+beaming face with smiling eyes smily            😁
+grinning squinting face laughing bawling        😆
 grinning face with sweat                        😅
-rolling on the floor laughing                   🤣
-face with tears of joy                          😂
-slightly smiling face                           🙂
-upside-down face                                🙃
+rolling on the floor laughing rofl joy          🤣
+face with tears of joy rofl                     😂
+slightly smiling face smily                     🙂
+upside-down face down upside                    🙃
 winking face                                    😉
-smiling face with smiling eyes                  😊
-smiling face with halo                          😇
+smiling face with smiling eyes blush            😊
+smiling face with halo innocent angel           😇
 smiling face with hearts                        🥰
-smiling face with heart-eyes                    😍
-star-struck                                     🤩
-face blowing a kiss                             😘
+smiling face with heart-eyes eyes heart         😍
+star-struck  star                               🤩
+face blowing a kiss kissing                     😘
 kissing face                                    😗
 smiling face                                   ☺️
 kissing face with closed eyes                   😚
 kissing face with smiling eyes                  😙
 smiling face with tear                          🥲
-face savoring food                              😋
+face savoring food yum                          😋
 face with tongue                                😛
 winking face with tongue                        😜
 zany face                                       🤪
@@ -28,13 +28,13 @@ squinting face with tongue                      😝
 money-mouth face                                🤑
 hugging face                                    🤗
 face with hand over mouth                       🤭
-shushing face                                   🤫
+shushing face  shh                              🤫
 thinking face                                   🤔
 zipper-mouth face                               🤐
-face with raised eyebrow                        🤨
-neutral face                                    😐
-expressionless face                             😑
-face without mouth                              😶
+face with raised eyebrow thinking               🤨
+neutral face          unamused                  😐
+expressionless face   unamused                  😑
+face without mouth    no mouth                  😶
 face in clouds                               😶‍🌫️
 smirking face                                   😏
 unamused face                                   😒
@@ -67,8 +67,8 @@ nerd face                                       🤓
 face with monocle                               🧐
 confused face                                   😕
 worried face                                    😟
-slightly frowning face                          🙁
-frowning face                                  ☹️
+slightly frowning face sad                      🙁
+frowning face          sad                     ☹️
 face with open mouth                            😮
 hushed face                                     😯
 astonished face                                 😲
@@ -77,10 +77,10 @@ pleading face                                   🥺
 frowning face with open mouth                   😦
 anguished face                                  😧
 fearful face                                    😨
-anxious face with sweat                         😰
+anxious face with sweat   fear                  😰
 sad but relieved face                           😥
 crying face                                     😢
-loudly crying face                              😭
+loudly crying face        sobbing               😭
 face screaming in fear                          😱
 confounded face                                 😖
 persevering face                                😣
@@ -90,11 +90,11 @@ weary face                                      😩
 tired face                                      😫
 yawning face                                    🥱
 face with steam from nose                       😤
-pouting face                                    😡
+pouting face                   angry            😡
 angry face                                      😠
 face with symbols on mouth                      🤬
-smiling face with horns                         😈
-angry face with horns                           👿
+smiling face with horns         devil           😈
+angry face with horns           devil           👿
 skull                                           💀
 skull and crossbones                           ☠️
 pile of poo                                     💩

@@ -1,1 +1,1 @@
-echo "  $(/home/reiter/scripts/status/memory.sh) | $(/home/reiter/scripts/wifi/wifistatus.sh) | $(/home/reiter/scripts/status/volume.sh) | $(/home/reiter/scripts/status/batteryicon.sh) | $(/home/reiter/scripts/status/date_time.sh) "
+echo "  $(/home/reiter/scripts/status/bluetooth.sh)$(/home/reiter/scripts/status/memory.sh) | $(/home/reiter/scripts/status/wifistatus.sh) | $(/home/reiter/scripts/status/volume.sh) | $(/home/reiter/scripts/status/batteryicon.sh) | $(/home/reiter/scripts/status/date_time.sh) "

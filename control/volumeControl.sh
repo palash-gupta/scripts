@@ -10,6 +10,7 @@
 # https://gist.github.com/sebastiencs/5d7227f388d93374cebdf72e783fbd6a
 
 sink=$(cat /tmp/audio-sink)
+scale=$(grep "blue" /tmp/audio-sink >> /dev/null && echo 0 || echo 40)
 
 function get_volume {
     pactl get-sink-volume $sink | grep Volume | awk '{print $5}' | cut -d '%' -f 1
@@ -26,8 +27,8 @@ function send_notification {
     volume=$(get_volume)
     # Make the bar with the special character ─ (it's not dash -)
     # https://en.wikipedia.org/wiki/Box-drawing_character
-    bar=$(seq --separator="-" 5 "$((volume / 5))" | sed 's/[0-9]//g')
-    padding=$(seq --separator="⠀" 5 "$((40 - volume / 5))" | sed 's/[0-9]//g')
+    bar=$(seq --separator="-" $((scale / 8)) "$((volume / 5))" | sed 's/[0-9]//g')
+    padding=$(seq --separator="⠀" $((scale / 8)) "$(($scale - volume / 5))" | sed 's/[0-9]//g')
     # Send the notification
     dunstify -i $iconMuted -r 5555 -u normal -t 1200 " $bar$padding"
     echo "󰝟" > /tmp/audio-icon
@@ -35,8 +36,8 @@ function send_notification {
     volume=$(get_volume)
     # Make the bar with the special character ─ (it's not dash -)
     # https://en.wikipedia.org/wiki/Box-drawing_character
-    bar=$(seq --separator="-" 5 "$((volume / 5))" | sed 's/[0-9]//g')
-    padding=$(seq --separator="⠀" 5 "$((40 - volume / 5))" | sed 's/[0-9]//g')
+    bar=$(seq --separator="-" $((scale / 8)) "$((volume / 5))" | sed 's/[0-9]//g')
+    padding=$(seq --separator="⠀" $((scale / 8)) "$(($scale - volume / 5))" | sed 's/[0-9]//g')
     # Send the notification
     dunstify -i $iconSound -r 5555 -u normal -t 1200 " $bar$padding"
     echo "󰕾" > /tmp/audio-icon
